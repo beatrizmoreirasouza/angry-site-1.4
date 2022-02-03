@@ -25,12 +25,12 @@
       </div>
       <div class="buttons">
         <button class="btn signup">SingUp</button>
-        <button class="btn login">LogIn</button>
+        <button onclick="openModal()" class="btn login">LogIn</button>
       </div>
     </div>
     <div class="gallery"></div>
-    <div class="modal">
-      <div class="modal-bg"></div>
+    <div id="modal" class="modal">
+      <div onclick="closeModal()" class="modal-bg"></div>
       <div class="auth">
         <div class="auth-gallery">
           <div class="auth-gallery-img"></div>
@@ -49,10 +49,11 @@
             <label>Password</label>
             <input type="password" />
           </div>
-          <button class="btn enter">Enter</button>
+          <button onclick="closeModal()" class="btn enter">Enter</button>
           <a href="#" class="btn signup">SignUp</a>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
